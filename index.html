@@ -37,60 +37,60 @@
                     </svg>
                 </button>
                 <div class="js-menu-container">
-                    <div class="is-open">
-                        <button class="close-menu-btn js-close-menu">
-                            <svg width="8" height="8">
-                                <use href="./images/icons.svg#close"></use>
-                            </svg>
-                        </button>
-                        <nav class="nav-menu">
-                            <ul class="nav-menu-list">
-                                <li class="nav-menu-item">
-                                    <a class="nav-menu-link" href="index.html">Studio</a>
-                                </li>
-                                <li class="nav-menu-item">
-                                    <a class="nav-menu-link" href="portfolio.html">Portfolio</a>
-                                </li>
-                                <li class="nav-menu-item">
-                                    <a class="nav-menu-link" href="index.html">Contacts</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <address class="address-menu">
-                            <a class="address-menu-tel-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-                            <a class="address-menu-email-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                        </address>
-                        <ul class="menu-icon-list">
-                            <li class="menu-icon-item">
-                                <a class="menu-icon-link" href="instagram.com">
-                                    <svg class="menu-icon" width="24" height="24">
-                                        <use href="./images/icons.svg#instagram"></use>
-                                    </svg>
-                                </a>
+                    <button class="close-menu-btn js-close-menu">
+                        <svg width="8" height="8">
+                            <use href="./images/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                    <nav class="nav-menu">
+                        <ul class="nav-menu-list">
+                            <li class="nav-menu-item">
+                                <a class="nav-menu-link" href="index.html">Studio</a>
                             </li>
-                            <li class="menu-icon-item">
-                                <a class="menu-icon-link" href="twitter.com">
-                                    <svg class="menu-icon" width="24" height="24">
-                                        <use href="./images/icons.svg#twitter"></use>
-                                    </svg>
-                                </a>
+                            <li class="nav-menu-item">
+                                <a class="nav-menu-link" href="portfolio.html">Portfolio</a>
                             </li>
-                            <li class="menu-icon-item">
-                                <a class="menu-icon-link" href="facebook.com">
-                                    <svg class="menu-icon" width="24" height="24">
-                                        <use href="./images/icons.svg#facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="menu-icon-item">
-                                <a class="menu-icon-link" href="linkedin">
-                                    <svg class="menu-icon" width="24" height="24">
-                                        <use href="./images/icons.svg#linkedin"></use>
-                                    </svg>
-                                </a>
+                            <li class="nav-menu-item">
+                                <a class="nav-menu-link" href="index.html">Contacts</a>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
+                    <address class="address-menu">
+                        <ul class="address-menu-list">
+                            <li class="address-menu-item"><a class="address-menu-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                            <li class="address-menu-item"><a class="address-menu-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        </ul>
+                    </address>
+                    <ul class="menu-icon-list">
+                        <li class="menu-icon-item">
+                            <a class="menu-icon-link" href="instagram.com">
+                                <svg class="menu-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu-icon-item">
+                            <a class="menu-icon-link" href="twitter.com">
+                                <svg class="menu-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu-icon-item">
+                            <a class="menu-icon-link" href="facebook.com">
+                                <svg class="menu-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu-icon-item">
+                            <a class="menu-icon-link" href="linkedin">
+                                <svg class="menu-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </header>
@@ -152,9 +152,18 @@
                 <div class="container services-container">
                     <h2 class="services-heading">What are we doing</h2>
                     <ul class="services-list">
-                        <li class="services-item"><img src="./images/Rectangle_71.jpg" alt="Desktop" width="360" height="300"></li>
-                        <li class="services-item"><img src="./images/Rectangle_71_(1).jpg" alt="Mobile Phone Screens" width="360" height="300"></li>
-                        <li class="services-item"><img src="./images/Rectangle_71_(2).jpg" alt="Mobile Phone" width="360" height="300"></li>
+                        <li class="services-item">
+                            <img srcset="./images/services1.jpg, ./images/services1@2x.jpg"
+                                 src="./images/services1.jpg" alt="Desktop" width="360" height="300">
+                        </li>
+                        <li class="services-item">
+                            <img srcset="./images/services2.jpg, ./images/services2@2x.jpg"
+                                 src="./images/services2.jpg" alt="Mobile Phone Screens" width="360" height="300">
+                        </li>
+                        <li class="services-item">
+                            <img srcset="./images/services3.jpg, ./images/services3@2x.jpg"
+                                 src="./images/services3.jpg" alt="Mobile Phone" width="360" height="300">
+                        </li>
                     </ul>
                 </div> 
             </section>
@@ -164,7 +173,9 @@
                     <h2 class="team-heading">Our Team</h2>
                     <ul class="team-list">
                         <li class="team-item">
-                            <img class="team-photo" src="./images/img.jpg" alt="Mark Guerro" width="264" height="260">
+                            <img class="team-photo" 
+                                 srcset="./images/team1.jpg, ./images/team1@2x.jpg"
+                                 src="./images/team1.jpg" alt="Mark Guerro" width="264" height="260">
                             <div class="team-tag">
                                 <h3 class="team-title">Mark Guerrero</h3>
                                 <p class="team-description">Product Designer</p>
@@ -201,7 +212,9 @@
                             </div>
                         </li>
                         <li class="team-item">
-                            <img class="team-photo" src="./images/img_(1).jpg" alt="Tom Ford" width="264" height="260">
+                            <img class="team-photo" 
+                                 srcset="./images/team2.jpg, ./images/team2@2x.jpg" 
+                                 src="./images/team2.jpg" alt="Tom Ford" width="264" height="260">
                             <div class="team-tag">
                                 <h3 class="team-title">Tom Ford</h3>
                                 <p class="team-description">Frontend Developer</p>
@@ -238,7 +251,9 @@
                             </div>
                         </li>
                         <li class="team-item">
-                            <img class="team-photo" src="./images/img_(2).jpg" alt="Camilla Garcia" width="264" height="260">
+                            <img class="team-photo" 
+                                 srcset="./images/team3.jpg, ./images/team3@2x.jpg"
+                                 src="./images/team3.jpg" alt="Camilla Garcia" width="264" height="260">
                             <div class="team-tag">
                                 <h3 class="team-title">Camila Garcia</h3>
                                 <p class="team-description">Marketing</p>
@@ -275,7 +290,9 @@
                             </div>
                         </li>
                         <li class="team-item">
-                            <img class="team-photo" src="./images/img_(3).jpg" alt="Daniel Wilson" width="264" height="260">
+                            <img class="team-photo" 
+                                 srcset="./images/team4.jpg, ./images/team4@2x.jpg"
+                                 src="./images/team4.jpg" alt="Daniel Wilson" width="264" height="260">
                             <div class="team-tag">
                                 <h3 class="team-title">Daniel Wilson</h3>
                                 <p class="team-description">UI Designer</p>
