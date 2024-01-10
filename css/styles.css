@@ -488,6 +488,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
@@ -587,8 +588,14 @@ img {
 }
 
 /* PORTFOLIO BUTTON */
+.toggle-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
 
-.cards-btn {
+.toggle-btn {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -607,15 +614,8 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }   
 
-.cards-list {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    flex-wrap: wrap;
-}
-
-.cards-btn:hover,
-.cards-btn:focus {
+.toggle-btn:hover,
+.toggle-btn:focus {
     color: var(--WHITE);
     background-color: var(--OCEAN);
     border: 1px solid transparent;
@@ -1258,32 +1258,47 @@ img {
    /* FOOTER SECTION */
 
   .footer-container {
-    width: 100%;
-    justify-content: center;
-    padding: 96px 0;
-    gap: 72px;
-    flex-direction: column;
-    align-items: center;
+    display: block;
+    max-width: 100%;
+    padding: 96px 15px;
   }
+
+  .footer-paragraph {
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+
+  .footer-icon-list {
+    margin-bottom: 72px;
+  }
+
   .footer-logo-container, 
   .footer-icon-container {
     margin: 0;
   }
+  
   .footer-link,
   .footer-icon-paragraph,
   .footer-form-paragraph {
     text-align: center;
   }
+
   .footer-form {
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    gap: 16px;
+    display: block;
+    
   }
 
   .footer-input-email {
-    width: fill-avaiable;
+    width: 100%;
+    margin-bottom: 16px;
   }
+
+  .footer-btn {
+    margin: 0 auto;
+  }
+
+
+  /* PORTFOLIO SECTION */
 
   .portfolio {
     padding: 48px 0;
@@ -1294,13 +1309,13 @@ img {
     padding: 0 16px;
   }
   
-  .cards-list {
+  .toggle-list {
     justify-content: flex-start;
-    padding-right: 125px;
+    padding-right: 120px;
     margin-bottom: 48px;
   }
 
-  .cards-btn {
+  .toggle-btn {
     padding: 8px 16px;
   }
 
@@ -1459,7 +1474,7 @@ img {
   .portfolio-item {
     width: calc((100% - 24px) / 2);
  }
-  .cards-list {
+  .toggle-list {
     margin-bottom: 64px;
   }
 
@@ -1607,7 +1622,7 @@ img {
     width: calc((100% - 48px) / 3);
 }
 
-.cards-list {
+.toggle-list {
   margin-bottom: 72px;
 }
 
